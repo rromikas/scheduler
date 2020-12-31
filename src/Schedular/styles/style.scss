@@ -1,0 +1,86 @@
+@font-face {
+  src: url("../../fonts/Poppins-Regular.ttf") format("truetype");
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../../fonts/Poppins-Medium.ttf") format("truetype");
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("../../fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.main {
+  font-family: Poppins !important;
+}
+
+td {
+  border: 1px solid #f9dea5;
+  text-align: left;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.steps::after {
+  height: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  border-right: 2px solid #2d2d61;
+}
+
+.steps {
+  position: relative;
+}
+
+.user-select-none {
+  user-select: none;
+}
+
+.focus-outline-0:focus {
+  outline: 0;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.appear {
+  opacity: 0;
+  animation-name: appear;
+  animation-fill-mode: forwards;
+  animation-timing-function: step-end;
+  animation-duration: 0.02s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.form-btn {
+  background: #2d2d61;
+  color: white;
+  padding: 4px 40px;
+  border-radius: 25px;
+  cursor: pointer;
+}
